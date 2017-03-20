@@ -1,0 +1,91 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: verdana;
+	font-size: 1em;
+}
+.pantalla
+{
+	width: 1366px;
+	height: 768px;
+}
+.pantalla .banner
+{
+	height: 100px;
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 20px 0px 20px;
+}
+.pantalla .logo
+{
+	/*background-image: url(../_img/logo.png);*/
+	width: 540px;
+	height: 84px;
+}
+.pantalla .banner .usuario p
+{
+	font-size: 0.95em;
+}
+.pantalla .banner .usuario p:first-child
+{
+	font-weight: 700;
+}
+.pantalla .menu
+{
+	height: 35px;
+	background-color: #005685;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: white;
+	padding: 0px 15px 0px 10px;
+}
+.pantalla .menu .titulo
+{
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+nav.desplegable
+{
+	width: 150px;
+	background-color: rgba(0, 129, 196, 0.6);
+	position: absolute;
+	left: -150px;
+	color: white;
+	transition: left 0.5s;
+	height: 633px;
+}
+aside.desplegable
+{
+	overflow: hidden;
+	height: 0px;
+	width: 180px;
+	position: absolute;
+	color: white;
+	transition: height 0.5s;
+	padding: 0px 10px 0px 10px;
+	top: 135px;
+	right: 0px;
+}
+ul.opciones
+{
+	list-style-type: none;
+}
+ul.opciones li
+{
+	line-height: 30px;
+	background-color: rgba(0, 86, 133, 0.6);
+	cursor: pointer;
+}
+.contenido
+{
+	background-color: #DEDCD4;
+	height: 633px;
+}
