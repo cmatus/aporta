@@ -9,7 +9,7 @@
 .pantalla
 {
 	width: 1366px;
-	height: 768px;
+	height: 668px;
 }
 .pantalla .banner
 {
@@ -42,7 +42,11 @@
 	align-items: center;
 	justify-content: space-between;
 	color: white;
-	padding: 0px 15px 0px 10px;
+	padding: 0px 10px 0px 5px;
+}
+.pantalla #divMenu, .pantalla #divOpciones
+{
+	cursor: pointer;
 }
 .pantalla .menu .titulo
 {
@@ -50,7 +54,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	cursor: pointer;
 }
 nav.desplegable
 {
@@ -60,7 +63,7 @@ nav.desplegable
 	left: -150px;
 	color: white;
 	transition: left 0.5s;
-	height: 633px;
+	height: 533px;
 }
 aside.desplegable
 {
@@ -78,14 +81,23 @@ ul.opciones
 {
 	list-style-type: none;
 }
-ul.opciones li
+nav.desplegable ul.opciones li
 {
 	line-height: 30px;
 	background-color: rgba(0, 86, 133, 0.6);
 	cursor: pointer;
+	padding: 0px 10px 0px 10px;
+}
+aside.desplegable ul.opciones li
+{
+	line-height: 30px;
+	width: 180px;
+	background-color: rgba(0, 86, 133, 0.8);
+	cursor: pointer;
+	padding: 0px 10px 0px 10px;
 }
 .contenido
 {
 	background-color: #DEDCD4;
-	height: 633px;
+	height: 533px;
 }
