@@ -1,0 +1,222 @@
+<table>
+                                                                        <tr height=20>
+                                                                        <td><b>PLANTA</b></td>
+                                                                        <td><b>ARTICULO</b></td>
+                                                                        <td><b>No. DOCTO.</b></td>
+                                                                        <td><b>P/O</b></td>
+                                                                        <td><b>FEC. DOCTO.</b></td>
+                                                                        <td><b>COD. PROV.</b></td>
+                                                                        <td><b>PROVEEDOR</b></td>
+                                                                        <td><b>CANTIDAD</b></td>
+                                                                        <td><b>COSTO</b></td>
+                                                                        <td><b>VALOR</b></td>
+                                                                        <td><b>REFERENCIA</b></td>
+                                                                        </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>913711012113</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>85</td>
+                                                                            <td>8,117</td>
+                                                                            <td>689,945</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>913711209213</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>1,107</td>
+                                                                            <td>5,880</td>
+                                                                            <td>6,509,160</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>913711210313</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>800</td>
+                                                                            <td>4,426</td>
+                                                                            <td>3,540,800</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>913711210713</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>1,004</td>
+                                                                            <td>5,975</td>
+                                                                            <td>5,998,900</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>913711211413</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>600</td>
+                                                                            <td>10,241</td>
+                                                                            <td>6,144,600</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>913711212013</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>3,484</td>
+                                                                            <td>3,221</td>
+                                                                            <td>11,221,964</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>913711220413</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>811</td>
+                                                                            <td>3,354</td>
+                                                                            <td>2,720,094</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>913711400613</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>1,000</td>
+                                                                            <td>956</td>
+                                                                            <td>956,000</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>913711401213</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>5,000</td>
+                                                                            <td>746</td>
+                                                                            <td>3,730,000</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>913711621713</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>3,000</td>
+                                                                            <td>946</td>
+                                                                            <td>2,838,000</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>913711626413</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>3,000</td>
+                                                                            <td>905</td>
+                                                                            <td>2,715,000</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>913711626813</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>1,000</td>
+                                                                            <td>764</td>
+                                                                            <td>764,000</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>913711630513</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>2,400</td>
+                                                                            <td>1,116</td>
+                                                                            <td>2,678,400</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>913711633613</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>200</td>
+                                                                            <td>1,352</td>
+                                                                            <td>270,400</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>919706087352</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>500</td>
+                                                                            <td>578</td>
+                                                                            <td>289,000</td>
+                                                                            <td></td>
+                                                                            </tr>
+                                                                            <tr height=20>
+                                                                            <td>CL00</td>
+                                                                            <td>919706087362</td>
+                                                                            <td>5000939716</td>
+                                                                            <td></td>
+                                                                            <td>07/10/2009</td>
+                                                                            <td></td>
+                                                                            <td>PHILIPS DO BRASIL LTDA</td>
+                                                                            <td>500</td>
+                                                                            <td>519</td>
+                                                                            <td>259,500</td>
+                                                                            <td></td>
+                                                                            </tr></table>

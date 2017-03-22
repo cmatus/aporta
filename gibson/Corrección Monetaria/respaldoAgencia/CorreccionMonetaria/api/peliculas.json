@@ -1,0 +1,128 @@
+{
+  "peliculas": [
+    {
+      "id": 1,
+      "nombre": "El sexto sentido",
+      "director": "M. Night Shyamalan",
+      "clasificacion": "Drama"
+    },
+    {
+      "id": 2,
+      "nombre": "Pulp Fiction",
+      "director": "Tarantino",
+      "clasificacion": "Acción"
+    },
+    {
+      "id": 3,
+      "nombre": "Todo Sobre Mi Madre",
+      "director": "Almodobar",
+      "clasificacion": "Drama"
+    },
+    {
+      "id": 4,
+      "nombre": "300",
+      "director": "Zack Snyder",
+      "clasificacion": "Acción"
+    },
+    {
+      "id": 5,
+      "nombre": "El silencio de los corderos",
+      "director": "Jonathan Demme",
+      "clasificacion": "Drama"
+    },
+    {
+      "id": 6,
+      "nombre": "Forrest Gump",
+      "director": "Robert Zemeckis",
+      "clasificacion": "Comedia"
+    },
+    {
+      "id": 7,
+      "nombre": "Las Hurdes",
+      "director": "Luis Buñuel",
+      "clasificacion": "Documental"
+    },
+    {
+      "nombre": "Spiderman 3",
+      "director": "Stan Lee",
+      "clasifucacion": "AcciónAcción",
+      "id": "8"
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "Drama",
+      "id": 1
+    },
+    {
+      "nombre": "Comedia",
+      "id": 2
+    },
+    {
+      "nombre": "Documental",
+      "id": 3
+    },
+    {
+      "nombre": "Acción",
+      "id": 4
+    }
+  ],
+  "proveedor": [
+    { "id": 50, "nombre": "(NAC)Philips do Brasil Ltda." },
+    { "id": 48, "nombre": "(NAC)PHILIPS ELECTRONICS HONG KONG" },
+    { "id": 51, "nombre": "(NAC)PHILIPS ELECTRONICS UK LTD" },
+    { "id": 49, "nombre": "(NAC)PHILIPS ELECTRONICS UK LTD" },
+    { "id": 52, "nombre": "(NAC)PHILIPS MEDICAL SYST NEDERLAND" },
+    { "id": 55, "nombre": "(NAC)Philips Medical Systems Export" },
+    { "id": 53, "nombre": "(NAC)PMSNA-Customer Service SPS Ame" },
+    { "id": 54, "nombre": "(NAC)VMI INDUSTRIA  E COMERCIO LTDA" },
+    { "id": 16, "nombre": "1SIMEL LTDA." },
+    { "id": 1, "nombre": "AGENCIAS UNIVERSALES S.A." },
+    { "id": 41, "nombre": "ALVARO CASANOVA MAQUINARIAS LT" },
+    { "id": 14, "nombre": "ASOCIACION CHILENA DE SEGURIDA" },
+    { "id": 42, "nombre": "BEIERSDORF S.A." },
+    { "id": 11, "nombre": "CENCOSUD SUPERMERCADOS S.A." },
+    { "id": 2, "nombre": "CIA.AMERICANA DE MULTISERVICIO" },
+    { "id": 33, "nombre": "COM DE PDTOS VARIOS ZÚÑIGA URZ" },
+    { "id": 17, "nombre": "COM. E INDUSTRIAL ABELEC LTDA." },
+    { "id": 43, "nombre": "COMERCIAL PROBAG LTDA." },
+    { "id": 24, "nombre": "COMERCIAL Y SERVICIOS PLUS SER" },
+    { "id": 3, "nombre": "COMERCIALIZADORA DE PROD. DE I" },
+    { "id": 4, "nombre": "CONDENSADORES DNA CHILE S.A." },
+    { "id": 27, "nombre": "DISTRIBUIDORA DE MERCADERIAS" },
+    { "id": 5, "nombre": "EASY S.A." },
+    { "id": 44, "nombre": "ECOGAR S.A." },
+    { "id": 6, "nombre": "ELAMET LTDA." },
+    { "id": 34, "nombre": "EQUIPOS MEDICOS LTDA." },
+    { "id": 18, "nombre": "IMAGENES 2001 S.A." },
+    { "id": 20, "nombre": "IMPORT EXPORT RENACER E.I.R.L." },
+    { "id": 29, "nombre": "IMPORTADORA RENACER S.A." },
+    { "id": 31, "nombre": "INDIA IMPORT EXPORT LTDA" },
+    { "id": 19, "nombre": "INDUSTRIAS WAMCO SA" },
+    { "id": 22, "nombre": "Ingeniera en Plsticos y Meta" },
+    { "id": 7, "nombre": "INGENIERÍA EN PLÁSTICOS Y META" },
+    { "id": 35, "nombre": "INRA-REFRIGERACIÓN INDUSTRIAL" },
+    { "id": 28, "nombre": "INTCOMEX CHILE S.A." },
+    { "id": 15, "nombre": "MATRICES PLÁSTICOS Y METALES" },
+    { "id": 8, "nombre": "MATRICES PLÁSTICOS Y METALES L" },
+    { "id": 21, "nombre": "Matrices Plsticos y Metales L" },
+    { "id": 39, "nombre": "NEASY S.A." },
+    { "id": 40, "nombre": "OAGENCIAS UNIVERSALES S.A." },
+    { "id": 25, "nombre": "PARIS S.A." },
+    { "id": 32, "nombre": "PATRICIO GANEM JURE Y CIA LTDA" },
+    { "id": 23, "nombre": "PHILIPS CHILENA S.A.-CE IQUIQU" },
+    { "id": 56, "nombre": "PREM K. MAYANI DAYANANI" },
+    { "id": 30, "nombre": "REIFSCHNEIDER S.A." },
+    { "id": 36, "nombre": "REXEL ELECTRA S.A." },
+    { "id": 37, "nombre": "REXEL ELECTRA SA" },
+    { "id": 26, "nombre": "S.A.C.I. FALABELLA" },
+    { "id": 57, "nombre": "SÁNCHEZ Y SÁNCHEZ LTDA." },
+    { "id": 9, "nombre": "SIMEL LTDA." },
+    { "id": 46, "nombre": "SOCIEDAD DE INGENIERIA Y SERVI" },
+    { "id": 10, "nombre": "SOMELA S.A." },
+    { "id": 12, "nombre": "SUPERMERC.SAN FRANCISCO BUIN S" },
+    { "id": 47, "nombre": "VENTAS,SERVICIOS Y ASESORIAS L" },
+    { "id": 45, "nombre": "VMI INDUSTRIA E COMERCIO LTDA" },
+    { "id": 13, "nombre": "ZARA CHILE S.A" }
+  ]
+}
