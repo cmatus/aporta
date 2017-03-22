@@ -1,0 +1,51 @@
+INPUT {
+	border-left:   1px solid #c0c0c0;
+	border-top:    1px solid #c0c0c0;
+	border-right:  1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	font:normal normal 7pt tahoma,arial,helvetica,sans-serif;
+}
+
+td     {font:normal 7pt tahoma,arial,helvetica,sans-serif}
+select {font:normal normal 7pt tahoma,arial,helvetica,sans-serif;}
+
+a:link   {color:#ff6600;text-decoration:none;font:bold 7pt verdana,arial,helvetica,sans-serif;cursor:hand}
+a:visited{color:#ff6600;text-decoration:none;font:bold 7pt verdana,arial,helvetica,sans-serif;cursor:hand}
+a:hover  {color:#5085bc;text-decoration:none;font:bold 7pt verdana,arial,helvetica,sans-serif;cursor:hand}
+
+.sin {
+	border:none;
+	font:normal normal 7pt tahoma,arial,helvetica,sans-serif;
+}
+
+.cen   {font:normal normal 7pt tahoma,arial,helvetica,sans-serif;text-align:center;background-Color:WHITE;}
+.der   {font:normal normal 7pt tahoma,arial,helvetica,sans-serif;text-align:right;background-Color:WHITE;}
+.izq   {font:normal normal 7pt tahoma,arial,helvetica,sans-serif;text-align:left;background-Color:WHITE;}
+
+.br    {font:normal normal 5pt tahoma,arial,helvetica,sans-serif;}
+.br2   {font:normal normal 2pt tahoma,arial,helvetica,sans-serif;}
+
+.combo {font:normal normal 7pt tahoma,arial,helvetica,sans-serif;background-Color:WHITE;}
+.boton1{font:bold 7pt tahoma,arial,helvetica,sans-serif;height=22;width=70}
+
+.tdIte {font:bold 7pt tahoma,arial,helvetica,sans-serif;text-align:right}
+.tdDer {font: 7pt tahoma,arial,helvetica,sans-serif;;text-align:right}
+.tdIzq {font:normal 7pt tahoma,arial,helvetica,sans-serif;text-align:left}
+.tdCen {font:normal 7pt tahoma,arial,helvetica,sans-serif;text-align:center}
+
+.tdDer_Det {font:normal 7pt tahoma,arial,helvetica,sans-serif;text-align:right}
+.tdIzq_Det {font:normal 7pt tahoma,arial,helvetica,sans-serif;text-align:left}
+.tdCen_Det {font:normal 7pt tahoma,arial,helvetica,sans-serif;text-align:center}
+.tdJst_Det {font:normal 7pt tahoma,arial,helvetica,sans-serif;text-align:justify}
+
+.txt_cen {font:normal normal 7pt tahoma,arial,helvetica,sans-serif;text-align:center;border:none;background-Color:transparent}
+.txt_der {font:normal normal 7pt tahoma,arial,helvetica,sans-serif;text-align:right ;border:none;background-Color:transparent}
+.txt_izq {font:normal normal 7pt tahoma,arial,helvetica,sans-serif;text-align:left  ;border:none;background-Color:transparent}
+
+.tdIzq_2 {font:bold 10pt tahoma,arial,helvetica,sans-serif;text-align:left}
+.btnScroll{font:bold 7pt WingDings;height=22;width=70}
+
+.etiqueta_1{
+    font:bold 7pt tahoma,arial,helvetica,sans-serif;
+    text-align:right
+}
