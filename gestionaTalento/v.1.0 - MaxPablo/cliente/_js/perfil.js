@@ -4,7 +4,11 @@ function perfilSerializar() {
 		"nombre": $("#txtNombre").val(),
 		"objetivo": $("#txtObjetivo").val(),
 		"reporta": $("#txtReporta").val(),
+<<<<<<< HEAD
 		"tareas": $("#txtTareas").val()
+=======
+		"tareas": $("#txtTareas").val(),
+>>>>>>> 71addec6973524cbcda1680bc04bf31e2eeead96
 	}
 	return datos;
 }
@@ -12,7 +16,11 @@ function perfilSerializar() {
 function perfilLlenaTabla(oData) {
 	$("#tabData tr.item").remove();
 	$(oData).each(function() {
+<<<<<<< HEAD
 		$("#tabData").append("<tr class='item' style='cursor:pointer' onclick='perfilEditar(this)'><td>" + this.id + "</td><td>" + this.nombre + "</td><td>" + this.objetivo + "</td><td>" + this.reporta + "</td><td>" + this.tareas + "</td></tr>");
+=======
+		$("#tabData").append("<tr class='item' style='cursor:pointer' onclick='editar(this)'><td>" + this.id + "</td><td>" + this.nombre + "</td><td>" + this.objetivo + "</td><td>" + this.reporta + "</td><td>" + this.tareas + "</td></tr>");
+>>>>>>> 71addec6973524cbcda1680bc04bf31e2eeead96
 	});
 }
 
@@ -28,7 +36,11 @@ function perfilLimpiar(tipo) {
 }
 
 function perfilAgregar() {
+<<<<<<< HEAD
 	perfilLimpiar(true);
+=======
+	limpiar(true);
+>>>>>>> 71addec6973524cbcda1680bc04bf31e2eeead96
 }
 
 function perfilListar() {
@@ -50,14 +62,22 @@ function perfilRegistrar() {
 	} else {
 		ajaxPost(urlApi + "/perfil", datos, perfilListar);
 	}
+<<<<<<< HEAD
 	perfilAgregar();
+=======
+	agregar();
+>>>>>>> 71addec6973524cbcda1680bc04bf31e2eeead96
 }
 
 function perfilEliminar() {
 	var datos = perfilSerializar();
 	if(parseInt(datos.id) > 0) {
 		ajaxDelete(urlApi + "/perfil/" + datos.id, perfilListar);
+<<<<<<< HEAD
 		perfilAgregar();
+=======
+		agregar();
+>>>>>>> 71addec6973524cbcda1680bc04bf31e2eeead96
 	}
 }
 
