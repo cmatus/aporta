@@ -108,6 +108,20 @@ class PersonaController extends FOSRestController {
     }
 
     /**
+     * @Rest\Post("/persona/{id}")
+     */
+    public function asignarEmpresa($id, Request $request) {
+        $data = new PersonaEmpresa;
+        $empresa_id = $request->get('empresa_id');
+        $data->setPersonaId($id);
+        $data->getEmpresaId($empresa_id);
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($data);
+        $em->flush();
+        return new View("Empresa asignada a persona Correctamente", Response::HTTP_OK);
+    }
+
+    /**
      * @Rest\Put("/persona/{id}")
      */
     public function updateAction($id, Request $request) {
