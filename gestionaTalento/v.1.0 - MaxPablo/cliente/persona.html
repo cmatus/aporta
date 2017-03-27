@@ -14,11 +14,16 @@
 	<input type="hidden" id="txtNombreCompleto">
 	<label style="width: 250px">Rut</label><br><input type="text" id="txtRut" style="width: 250px"><br>
 	<label style="width: 250px">Nombre</label><br><input type="text" id="txtNombre" style="width: 250px"><br>
-	<label style="width: 250px">Ap. Paterno</label><br><input type="text" id="txtApellidoPaterno" style="width: 250px"><br>
-	<label style="width: 250px">Ap. Materno</label><br><input type="text" id="txtApellidoMaterno" style="width: 250px"><br>
+	<label style="width: 250px">Apellido Paterno</label><br><input type="text" id="txtApellidoPaterno" style="width: 250px"><br>
+	<label style="width: 250px">Apellido Materno</label><br><input type="text" id="txtApellidoMaterno" style="width: 250px"><br>
 	<label style="width: 250px">Correo</label><br><input type="text" id="txtCorreo" style="width: 250px"><br>
 	<label style="width: 250px">Perfil</label><br><select id="cmbPerfil" style="width: 250px"></select><br>
-	<button onclick="agregar()">Agregar</button>
-	<button onclick="registrar()">Registrar</button>
-	<button onclick="eliminar()">Eliminar</button>
+	<button onclick="personaAgregar()">Agregar</button>
+	<button onclick="personaRegistrar()">Registrar</button>
+	<button onclick="personaEliminar()">Eliminar</button>
+</div>
+<div style="display: inline-block;width:200px; height:auto; border: 1px solid silver; background-color: white">
+	<ul id="ulEmpresa"></ul>
+	<button id="btnListar"  onclick="personaEmpresaMostrar()">Listar</button>
+	<button id="btnAsignar" onclick="personaEmpresaAsignar()">Asignar</button>
 </div>

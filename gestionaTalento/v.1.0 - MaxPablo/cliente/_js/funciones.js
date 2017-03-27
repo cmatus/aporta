@@ -1,11 +1,11 @@
-var urlApi = "http://localhost/aporta/gestionaTalento/v.1.0%20-%20MaxPablo/api/web";
+var urlApi = "http://138.197.7.205/gt/api/web";
 
 $(document).ready(function() {
-	
-	$("#divMenu").click(function() { 
+
+	$("#divMenu").click(function() {
 		$("nav.desplegable").css("left", ($("nav.desplegable").css("left") == "0px" ? "-200px" : "0px"));
 	});
-	$("#divOpciones").click(function() { 
+	$("#divOpciones").click(function() {
 		$("aside.desplegable").css("height", ($("aside.desplegable").css("height") == "0px" ? "90px" : "0px"));
 	});
 
@@ -17,6 +17,7 @@ $(document).ready(function() {
 	});
 	$('#accordion > ul').hide();
 	$('#accordion > ul:eq(0)').show();
+
 
 });
 
