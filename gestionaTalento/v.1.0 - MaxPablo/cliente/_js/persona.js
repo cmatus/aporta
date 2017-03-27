@@ -95,7 +95,7 @@ function personaEmpresaMostrar() { // Solicita a la API las empresas (todas)
 function personaEmpresaLlenaLista(oData) { // Despliega lAs empresas solicitadas a la API
 $("#ulEmpresa ul").remove();
 	$(oData).each(function() {
-		$("#ulEmpresa").append("<li style='text-align:left; list-style: none;'><input  type='checkbox' id='" + this.id + "'>" + this.razon_social + " </li>");
+		$("#ulEmpresa").append("<li style='text-align:left; list-style: none;'><input  type='checkbox' id='" + this.id + "'>&nbsp;" + this.razon_social + " </li>");
 	});
 }
 

@@ -14,6 +14,23 @@ button
 	width: 90px;
 	border: 1px solid #959595;
 }
+button.circulo
+{
+	height: 30px;
+	width: 30px;
+	border-radius: 5px;
+	font-size: 0.8em;
+	font-weight: bold;
+	border: 3px solid white;
+}
+.azul
+{
+	background-color: blue;
+}
+.rojo
+{
+	background-color: red;
+}
 label
 {
 	font-size: 0.9em;
@@ -165,4 +182,13 @@ aside.desplegable
 #tabData tr td
 {
 	border: 1px solid #C0C0C0;
+}
+.ulCheck li
+{
+	padding: 0px 10px 0px 10px;
+	line-height: 30px;
+}
+.ulCheck li:nth-child(odd)
+{
+	background-color: #ededed;
 }
