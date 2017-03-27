@@ -10,7 +10,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use FOS\RestBundle\View\View;
 use AppBundle\Entity\Empresa;
-use AppBundle\Entity\Persona;
 
 class EmpresaController extends FOSRestController {
 
@@ -21,7 +20,7 @@ class EmpresaController extends FOSRestController {
  {
    $restresult = $this->getDoctrine()->getRepository('AppBundle:Empresa')->findAll();
      if ($restresult === null) {
-       return new View("no hay Empresas agregadas", Response::HTTP_NOT_FOUND);
+       return new View("no hay nada wetamaxi", Response::HTTP_NOT_FOUND);
   }
      return $restresult;
  }
@@ -85,32 +84,8 @@ class EmpresaController extends FOSRestController {
      return new View("empresa Agregada Correctamente", Response::HTTP_OK);
  }
 
-//////////////////////////////////////////////////////////////////////////////////////
-//falta la relacion para este metodo
-/////////////////////////////////////////////////////////////////////////////////////
  /**
-  * @Rest\Post("/empresa/{id}")
-  */
- public function postAsignaAction($id, Request $request) {
-    $data = new Empresa;
-    $dataper = new Persona;
-    $personaid = $request->get('personaId');
-    $sn = $this->getDoctrine()->getManager();
-    $empresa = $this->getDoctrine()->getRepository('AppBundle:Empresa')->find($id);
-    if (empty($empresa)) {
-        return new View(" not found", Response::HTTP_NOT_FOUND);
-    }
-    //$dataper->setPersonaId($personaid);
-    $em = $this->getDoctrine()->getManager();
-    $em->persist($data);
-    $em->flush();
-    return new View("empresa asiganada Correctamente", Response::HTTP_OK);
- }
-
- //se me ocurre crear otro controller para personaEmpresa mandandole los id de empresa y persona
-
- /**
- * @Rest\Put("/empresa/{id}")
+ * @Rest\Put("/perfil/{id}")
  */
 public function updateAction($id, Request $request) {
     $data = new Empresa;
@@ -123,16 +98,40 @@ public function updateAction($id, Request $request) {
     $sn = $this->getDoctrine()->getManager();
     $empresa = $this->getDoctrine()->getRepository('AppBundle:Empresa')->find($id);
     if (empty($empresa)) {
-        return new View("empresa no encontrada", Response::HTTP_NOT_FOUND);
+        return new View("empresa not found", Response::HTTP_NOT_FOUND);
     } elseif (!empty($rut) && !empty($giro) && !empty($razonSocial) && !empty($direccion) && !empty($comuna) && !empty($telefono)) {
-        $empresa->setRut($rut);
-        $empresa->setGiro($giro);
-        $empresa->setRazonSocial($razonSocial);
-        $empresa->setDireccion($direccion);
-        $empresa->setComuna($comuna);
-        $empresa->setTelefono($telefono);
+        $empresa->setNombre($rut);
+        $empresa->setObjetivo($giro);
+        $empresa->setReporta($razonSocial);
+        $empresa->setTareas($direccion);
+        $empresa->setReporta($comuna);
+        $empresa->setTareas($telefono);
         $sn->flush();
         return new View("empresa Actualizada Correctamente", Response::HTTP_OK);
+    } elseif (!empty($rut) && empty($giro) && empty($razonSocial) && empty($direccion) && empty($comuna) && empty($telefono)) {
+        $empresa->setRut($rut);
+        $sn->flush();
+        return new View("rut Actualizado Correctamente", Response::HTTP_OK);
+    } elseif (empty($rut) && !empty($giro) && empty($razonSocial) && empty($direccion) && empty($comuna) && empty($telefono)) {
+        $empresa->setObjetivo($giro);
+        $sn->flush();
+        return new View("giro Actualizado Correctamente", Response::HTTP_OK);
+    } elseif (empty($rut) && empty($giro) && !empty($razonSocial) && empty($direccion) && empty($comuna) && empty($telefono)) {
+        $empresa->setReporta($razonSocial);
+        $sn->flush();
+        return new View("razon social Actualizada Correctamente", Response::HTTP_OK);
+    } elseif (empty($rut) && empty($giro) && empty($razonSocial) && !empty($direccion) && empty($comuna) && empty($telefono)) {
+        $empresa->setTareas($direccion);
+        $sn->flush();
+        return new View("direccion Actualizada Correctamente", Response::HTTP_OK);
+    } elseif (empty($rut) && empty($giro) && empty($razonSocial) && empty($direccion) && !empty($comuna) && empty($telefono)) {
+        $empresa->setReporta($comuna);
+        $sn->flush();
+        return new View("comuna Actualizada Correctamente", Response::HTTP_OK);
+    } elseif (empty($rut) && empty($giro) && empty($razonSocial) && empty($direccion) && empty($comuna) && !empty($telefono)) {
+        $empresa->setTareas($telefono);
+        $sn->flush();
+        return new View("Tareas Actualizadas Correctamente", Response::HTTP_OK);
     } else
         return new View("Los datos rut, giro, razonSocial, direccion, comuna y telefono de empresa no pueden estar vacios!", Response::HTTP_NOT_ACCEPTABLE);
 }
@@ -143,7 +142,7 @@ public function updateAction($id, Request $request) {
  public function deleteAction($id) {
      $data = new Empresa;
      $sn = $this->getDoctrine()->getManager();
-     $empresa = $this->getDoctrine()->getRepository('AppBundle:Empresa')->find($id);
+     $perfil = $this->getDoctrine()->getRepository('AppBundle:Empresa')->find($id);
      if (empty($empresa)) {
          return new View("No se encontro la empresa", Response::HTTP_NOT_FOUND);
      } else {

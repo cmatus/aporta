@@ -20,7 +20,7 @@ class PerfilController extends FOSRestController {
  {
    $restresult = $this->getDoctrine()->getRepository('AppBundle:Perfil')->findAll();
      if ($restresult === null) {
-       return new View("no hay nada", Response::HTTP_NOT_FOUND);
+       return new View("no hay nada perkianzo", Response::HTTP_NOT_FOUND);
   }
      return $restresult;
  }
@@ -100,6 +100,22 @@ class PerfilController extends FOSRestController {
          $perfil->setTareas($tareas);
          $sn->flush();
          return new View("perfil Actualizado Correctamente", Response::HTTP_OK);
+     } elseif (!empty($nombre) && empty($objetivo) && empty($reporta) && empty($tareas)) {
+         $perfil->setNombre($nombre);
+         $sn->flush();
+         return new View("nombre Actualizado Correctamente", Response::HTTP_OK);
+     } elseif (empty($nombre) && !empty($objetivo) && empty($reporta) && empty($tareas)) {
+         $perfil->setObjetivo($objetivo);
+         $sn->flush();
+         return new View("objetivo Actualizado Correctamente", Response::HTTP_OK);
+     } elseif (empty($nombre) && empty($objetivo) && !empty($reporta) && empty($tareas)) {
+         $perfil->setReporta($reporta);
+         $sn->flush();
+         return new View("reporta Actualizado Correctamente", Response::HTTP_OK);
+     } elseif (empty($nombre) && empty($objetivo) && empty($reporta) && !empty($tareas)) {
+         $perfil->setTareas($tareas);
+         $sn->flush();
+         return new View("Tareas Actualizadas Correctamente", Response::HTTP_OK);
      } else
          return new View("Los datos nombre, objetivo, reporta y tareas de Perfil no pueden estar vacios!", Response::HTTP_NOT_ACCEPTABLE);
  }

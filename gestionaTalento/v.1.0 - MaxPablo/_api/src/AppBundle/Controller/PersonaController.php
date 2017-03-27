@@ -10,7 +10,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use FOS\RestBundle\View\View;
 use AppBundle\Entity\Persona;
-use AppBundle\Entity\Perfil;
 //use Symfony\Component\Security\Core\User\User;
 
 class PersonaController extends FOSRestController {
@@ -121,16 +120,38 @@ class PersonaController extends FOSRestController {
         $sn = $this->getDoctrine()->getManager();
         $persona = $this->getDoctrine()->getRepository('AppBundle:Persona')->find($id);
         if (empty($persona)) {
-            return new View("persona no encontrada", Response::HTTP_NOT_FOUND);
+            return new View("user not found", Response::HTTP_NOT_FOUND);
         } elseif (!empty($rut) && !empty($nombre) && !empty($correo) && !empty($perfil)) {
             $persona->setRut($rut);
             $persona->setNombre($nombre);
             $persona->setCorreo($correo);
-            $persona->setApellidoPAterno($apellidoP);
-            $persona->setApellidoMaterno($apellidoM);
             $persona->setPerfilId($perfil);
             $sn->flush();
             return new View("Persona Actualizada Correctamente", Response::HTTP_OK);
+        } elseif (empty($rut) && empty($nombre) && empty($apellidoP) && empty($apellidoM) && empty($correo) && !empty($perfil)) {
+            $persona->setPerfil($perfil);
+            $sn->flush();
+            return new View("Perfil Actualizado Correctamente", Response::HTTP_OK);
+        } elseif (empty($rut) && empty($nombre) && empty($apellidoP) && empty($apellidoM)  && !empty($correo) && empty($perfil)) {
+            $persona->setCorreo($correo);
+            $sn->flush();
+            return new View("Correo Actualizado Correctamente", Response::HTTP_OK);
+        } elseif (empty($rut) && empty($nombre) && empty($apellidoP) && !empty($apellidoM)  && empty($correo) && empty($perfil)) {
+            $persona->setApellidoMaterno($apellidoM);
+            $sn->flush();
+            return new View("Apellido Materno Actualizado Correctamente", Response::HTTP_OK);
+        } elseif (empty($rut) && empty($nombre) && !empty($apellidoP) && empty($apellidoM)  && empty($correo) && empty($perfil)) {
+            $persona->setApellidoPaterno($apellidoP);
+            $sn->flush();
+            return new View("Apellido Paterno Actualizado Correctamente", Response::HTTP_OK);
+        } elseif (empty($rut) && !empty($nombre) && empty($correo) && empty($perfil)) {
+            $persona->setNombre($nombre);
+            $sn->flush();
+            return new View("Nombre Actualizado Correctamente", Response::HTTP_OK);
+        } elseif (!empty($rut) && empty($nombre) && empty($correo) && empty($perfil)) {
+            $persona->setRut($rut);
+            $sn->flush();
+            return new View("Rut Actualizado Correctamente", Response::HTTP_OK);
         } else
             return new View("Los datos rut, nombre,apellido paterno, apellido paterno, correo y perfil de Persona no pueden estar vacios!", Response::HTTP_NOT_ACCEPTABLE);
     }
