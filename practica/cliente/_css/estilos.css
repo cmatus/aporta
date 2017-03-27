@@ -1,0 +1,111 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: verdana;
+	font-size: 1em;
+}
+body
+{
+	overflow: hidden;
+}
+.pantalla
+{
+	width: 100%;
+	height: 100%;
+}
+.banner
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 20px 0px 20px;
+	height: 100px;
+}
+.logo
+{
+	background-image: url(../_img/logo.png);
+	width: 540px;
+	height: 84px;
+}
+.menu
+{
+	height: 35px;
+	background-color: #005685;
+	color: white;
+	padding: 0px 10px 0px 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+nav.desplegable
+{
+	position: absolute;
+	width: 200px;
+	left: -200px;
+	background-color: rgba(0, 129, 196, 0.6);
+	height: 100%;
+	transition: left 0.5s;
+}
+#accordion li.item
+{
+	line-height: 30px;
+	background-color: rgba(0, 129, 196, 0.9);
+	padding: 0px 10px 0px 10px;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	transition: 0.5s;
+}
+#accordion li.item:hover
+{
+	background-color: black;
+	color: white;
+}
+#accordion li.item:active
+{
+	padding: 0px 10px 0px 20px;
+}
+#accordion ul li.subItem
+{
+	line-height: 30px;
+	padding: 0px 10px 0px 10px;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	transition: 0.5s;
+}
+#accordion ul li.subItem:hover
+{
+	background-color: rgba(0, 129, 196, 0.7);
+	color: white;
+}
+#accordion ul li.subItem:active
+{
+	padding: 0px 10px 0px 20px;
+}
+#divMenu
+{
+	transition: 1s;
+}
+aside.desplegable
+{
+	overflow: hidden;
+	width: 200px;
+	position: absolute;
+	top: 135px;
+	right: 0px;
+	display: none;
+	background-color: rgba(0, 129, 196, 0.6);
+}
+aside.desplegable ul li
+{
+	line-height: 30px;
+	padding: 0px 10px 0px 10px;
+	cursor: pointer;
+	transition: 0.5s;
+	border-top: 1px solid white;	
+}
+#divOpciones
+{
+	transition: 1s;
+}
