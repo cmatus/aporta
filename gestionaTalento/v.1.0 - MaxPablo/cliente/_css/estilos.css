@@ -6,6 +6,29 @@
 	font-family: verdana;
 	font-size: 1em;
 }
+button
+{
+	border-radius: 5px;
+	font-size: 0.8em;
+	height: 35px;
+	width: 90px;
+	border: 1px solid #959595;
+}
+label
+{
+	font-size: 0.9em;
+	text-align: left;
+	display: inline-block;
+}
+input[type="text"], select
+{
+	font-size: 0.9em;
+	height: 30px;
+	border: 1px solid #C0C0C0;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	padding: 0px 5px 0px 5px;
+}
 .pantalla
 {
 	width: 1366px;
@@ -57,10 +80,10 @@
 }
 nav.desplegable
 {
-	width: 150px;
+	width: 200px;
 	background-color: rgba(0, 129, 196, 0.6);
 	position: absolute;
-	left: -150px;
+	left: -200px;
 	color: white;
 	transition: left 0.5s;
 	height: 533px;
@@ -77,27 +100,69 @@ aside.desplegable
 	top: 135px;
 	right: 0px;
 }
-ul.opciones
-{
-	list-style-type: none;
-}
-nav.desplegable ul.opciones li
+#accordion li.item
 {
 	line-height: 30px;
-	background-color: rgba(0, 86, 133, 0.6);
-	cursor: pointer;
 	padding: 0px 10px 0px 10px;
+	background-color: rgba(0, 129, 196, 0.9);
+	border-bottom: 1px solid white;
+	cursor: pointer;
 }
-aside.desplegable ul.opciones li
+#accordion ul li.subItem
 {
 	line-height: 30px;
-	width: 180px;
-	background-color: rgba(0, 86, 133, 0.8);
-	cursor: pointer;
 	padding: 0px 10px 0px 10px;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+}
+#accordion ul li.subItem:hover
+{
+	background-color: rgba(0, 129, 196, 0.7);
 }
 .contenido
 {
 	background-color: #DEDCD4;
 	height: 533px;
+}
+#divContenido
+{
+	padding: 10px;
+}
+#tabData
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	font-size: 0.8em;
+	border: 1px solid #C0C0C0;
+	border-radius: 3px;
+}
+#tabData tr
+{
+	height: 30px;
+}
+#tabData tr.encabezado
+{
+	background-color: #cccccc;
+}
+#tabData tr td
+{
+	padding: 0px 5px 0px 5px;
+}
+#tabData tr.encabezado td
+{
+	text-align: center;
+}
+#tabData tr.item:nth-child(odd)
+{
+	background-color: #ededed;
+}
+#tabData tr.item:hover
+{
+	background-color: #000000;
+	color: white;
+}
+#tabData tr td
+{
+	border: 1px solid #C0C0C0;
 }
